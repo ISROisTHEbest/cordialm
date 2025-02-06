@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header{
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation{
+    position: relative;
+    /* float: right;   */
+    top: 25px; 
+    padding-right: 10px;
+}
+
+.navigation li{
+    list-style: none;
+    margin: 15px 0;
+}    
+
+.navigation li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1.1em;
+    transition: 0.25s;
+    padding: 10px;
+}
+
+.navigation li a:hover{
+    color: white;
+    background-color: black;
+    transition: ease-in-out 500ms;
+}
+
+.navigation li a ion-icon{
+    padding-right: 10px;
+    font-size: 1.6em;
+    margin-right: 15px;
+}
+
+.toggle{
+    padding-right: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    /* float: right; */
+}
+
+.card{
+    float: right;
+    overflow: hidden;
+    height: 40px;
+    transition: height 1s ease-in-out;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+button ion-icon:hover{
+    background-color: black;
+    color: white;
+    transition: ease-in-out 500ms;
+}
+
+.card.active{
+    height: 400px;
+}
+
+.toggle ion-icon{
+    color: black;
+    font-size: 3em;
+}
+
+
+#home{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+#home:hover{
+    background-color:black;
+    color: white;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1{
+    font-size: 300px;
+    color: black;
+    font-weight: 100;
+}
+
+.subtitle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle h1{
+    color: black;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.video{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video_subject{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video_subject h1{
+    color: black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.copy h1{
+    color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.copy{
+    position: absolute;
+    top: 150%;
+    left: -70%;
+    transform: translate(-50%, -50%);
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    display: hidden;
+}
+
+ul a.menu{
+    display: none;
+}
+
+@media screen and (max-width: 1101px) {
+    .navigation li a{
+        font-size: 10px;
+    }
+    .navigation li{
+        padding: 1px;
+        margin: 0px;
+    }
+    .subtitle h1{
+        font-size: 25px;
+        width: 400px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .title{
+        top: 10%;
+    }
+    .title h1 img{
+        position: relative;
+        display:inline-block;
+        vertical-align: middle;
+        width: 300px;
+    }
+    .video video{
+        width: 400px;
+        height: auto;
+    }
+}
+

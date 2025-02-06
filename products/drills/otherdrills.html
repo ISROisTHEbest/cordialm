@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordial</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style otherdrills.css">
+    <link rel = "icon" type = "image/png" href = "/icon.jpg"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var clicked = false;
+        function toggle(){
+            var card = document.getElementById("card");
+            var cross = document.getElementById("cross");
+            var menu = document.getElementById("menu");
+            if (clicked == false){
+                card.style.height = "100vh";
+                clicked = true;
+                cross.style.display = "block"
+                menu.style.display = "none"
+            }
+            else{
+                card.style.height = "0px";
+                clicked = false;
+                cross.style.display = "none"
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body style="background-color:white;">
+    <header>
+        <div class="logo">
+            <img src="/logo.png" alt="logo">
+        </div>
+
+        <div class="card" id="card">
+            <ul class="navigation">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li class="active"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle" id="toggle">
+                <button onclick="toggle()"><ion-icon name="menu-outline" id="menu"></ion-icon><ion-icon name="close-outline" style="display:none" id="cross"></ion-icon></button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Other Drills</h1>
+        </div>
+        <div class="subtitle">
+            <table>
+                <tr>
+                    <td>
+                        <h1>EG2C [6mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/EG2C.png" alt="EG2C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    6mm, 235 Watts
+                                    <br>
+                                    2800 r.p.m, 2 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>EJ3C [10mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/EJ3C.png" alt="EJ3C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    10mm, 235 Watts
+                                    <br>
+                                    700 r.p.m., 2.3 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>12110 [10mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/12110.png" alt="12110" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    10mm, 550 Watts
+                                    <br>
+                                    0-2500 r.p.m., 1.3 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>WD2C [6mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WD2C.png" alt="WD2C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    6mm, 475 Watts
+                                    <br>
+                                    2400 r.p.m., 3.3 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>WD3C [10mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WD3C.png" alt="WD3C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    10mm, 550 Watts
+                                    <br>
+                                    1000 r.p.m., 3.7 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>WD34C [13mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WD34C.png" alt="WD34C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    13mm, 500 Watts
+                                    <br>
+                                    550 r.p.m., 4 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>WD34C [13mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WD34C.png" alt="WD34C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    13mm, 500 Watts
+                                    <br>
+                                    550 r.p.m., 4 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>SD4C [13mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/SD4C.png" alt="SD4C" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    13mm, 435 Watts
+                                    <br>
+                                    700 r.p.m., 4.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>14130 [13mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/14130.png" alt="14130" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    235v
+                                    <br>
+                                    13mm, 750 Watts
+                                    <br>
+                                    750 r.p.m., 4.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>TS35C [10mm/16mm]<br>(2 Speeds)</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/TS35C.png" alt="TS35C" width="250px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    10mm/16mm, 600 Watts
+                                    <br>
+                                    1380 r.p.m./560 r.p.m., 6 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>WDH [13mm-23mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WDH.png" alt="WDH" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    13-23mm, 595 Watts
+                                    <br>
+                                    560 r.p.m., 7.6 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>WDHC [20mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/WDHC.png" alt="WDHC" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    20mm, 595 Watts
+                                    <br>
+                                    560 r.p.m., 8 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>NW8 [25mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/NW8.png" alt="NW8" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    25mm, 660 Watts
+                                    <br>
+                                    380 r.p.m., 10.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>NW10 [31mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/NW10.png" alt="NW10" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235v
+                                    <br>
+                                    31mm, 850 Watts
+                                    <br>
+                                    280 r.p.m., 10.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>KU110K [10mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/KU110K.png" alt="KU110K" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    10mm, 500 Watts
+                                    <br>
+                                    0-2800 r.p.m., 1.2 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>KU108K [10mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/Drills/Other Drills/KU108K.png" alt="KU108K" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    10mm, 350 Watts
+                                    <br>
+                                    0-3000 r.p.m., 1.14 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+              </table>
+        </div>
+        </div>
+    </header>
+</body>
+</html>

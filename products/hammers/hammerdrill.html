@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordial</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style hammerdrill.css">
+    <link rel = "icon" type = "image/png" href = "/icon.jpg"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var clicked = false;
+        function toggle(){
+            var card = document.getElementById("card");
+            var cross = document.getElementById("cross");
+            var menu = document.getElementById("menu");
+            if (clicked == false){
+                card.style.height = "100vh";
+                clicked = true;
+                cross.style.display = "block"
+                menu.style.display = "none"
+            }
+            else{
+                card.style.height = "0px";
+                clicked = false;
+                cross.style.display = "none"
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body style="background-color:white;">
+    <header>
+        <div class="logo">
+            <img src="/logo.png" alt="logo">
+        </div>
+
+        <div class="card" id="card">
+            <ul class="navigation">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li class="active"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle" id="toggle">
+                <button onclick="toggle()"><ion-icon name="menu-outline" id="menu"></ion-icon><ion-icon name="close-outline" style="display:none" id="cross"></ion-icon></button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Hammer Drill</h1>
+        </div>
+        <div class="subtitle">
+            <table>
+                <tr>
+                    <td>
+                        <h1>RW22H [22mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/RW22H.png" alt="RW22H" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235W AC
+                                    <br>
+                                    22mm variable and reversible, 650W
+                                    <br>
+                                    0-850 r.p.m., 2.9 Amps., 2.2 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>RW26H [26mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/RW26H.png" alt="RW26H" width="300px"><img class="company" src="/ralli wolf.png" alt="ralli wolf" width="50px">
+                                </td>
+                                <td>
+                                    <br>
+                                    235W AC
+                                    <br>
+                                    26mm variable and reversible, 650W
+                                    <br>
+                                    0-1100 r.p.m., 3.4 Amps., 3.1 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>KU320P [26mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/KU320P.png" alt="KU320P" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    230v
+                                    <br>
+                                    26mm, 850W
+                                    <br>
+                                    0-1300 r.p.m., 3 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>KU332P [26mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/KU332P.png" alt="KU332P" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    26mm, 1100W
+                                    <br>
+                                    0-900 r.p.m., 4.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>KU334 [38mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/KU334.png" alt="KU334" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    38mm, 1050W
+                                    <br>
+                                    5.3 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <h1>KU340.1 [38mm]</h1>
+                        <table>
+                            <tr>
+                                <td>
+                                    <br>
+                                    <img src="/Images/hammers/Hammer Drill/KU340.1.png" alt="KU340.1" width="300px"><br><img class="company" src="/kress.png" alt="kress" width="140px">
+                                </td>
+                                <td>
+                                    <br>
+                                    220v
+                                    <br>
+                                    38mm, 1200W
+                                    <br>
+                                    0-3500 b.p.m., 5.5 kg
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+              </table>
+        </div>
+        </div>
+    </header>
+</body>
+</html>

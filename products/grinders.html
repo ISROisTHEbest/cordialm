@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cordial</title>
+    <link rel="stylesheet" type="text/css" href="../css/style grinders.css">
+    <link rel = "icon" type = "image/png" href = "/icon.jpg"> 
+    <link rel="stylesheet" type="text/css" href="../css/style drills.css">
+    <link rel = "icon" type = "image/png" href = "/icon.jpg"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var clicked = false;
+        function toggle(){
+            var card = document.getElementById("card");
+            var cross = document.getElementById("cross");
+            var menu = document.getElementById("menu");
+            if (clicked == false){
+                card.style.height = "100vh";
+                clicked = true;
+                cross.style.display = "block"
+                menu.style.display = "none"
+            }
+            else{
+                card.style.height = "0px";
+                clicked = false;
+                cross.style.display = "none"
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body style="background-color:white;">
+    <header>
+        <div class="logo">
+            <img src="/logo.png" alt="logo">
+        </div>
+
+        <div class="card" id="card">
+            <ul class="navigation">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/products.html">Products</a></li>
+                <li class="active"><a href="/contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle" id="toggle">
+                <button onclick="toggle()"><ion-icon name="menu-outline" id="menu"></ion-icon><ion-icon name="close-outline" style="display:none" id="cross"></ion-icon></button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Grinders</h1>
+        </div>
+        <div class="subtitle">
+            <h1>Categories:
+                <br>
+                <br>
+            </h1>
+                <ul class="tt" style="font-size: xx-large;">
+                    <li class="n"><a href="/products/grinders/diegrinders.html">DIE GRINDERS</a></li><br>
+                    <li class="n"><a href="/products/grinders/straightgrinders.html">STRAIGHT GRINDER</a></li><br>
+                    <li class="n"><a href="/products/grinders/anglegrinders.html">ANGLE GRINDERS</a></li><br>
+                    <li class="n"><a href="/products/grinders/benchgrinders.html">BENCH GRINDERS</a></li><br>
+                    
+                </ul>
+                
+        </div>
+        </div>
+    </header>
+</body>
+</html>

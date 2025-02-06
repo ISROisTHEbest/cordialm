@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "icon" type = "image/png" href = "/icon.jpg"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cordial
+    </title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style home.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var clicked = false;
+        function toggle(){
+            var card = document.getElementById("card");
+            var cross = document.getElementById("cross");
+            var menu = document.getElementById("menu");
+            if (clicked == false){
+                card.style.height = "100vh";
+                clicked = true;
+                cross.style.display = "block"
+                menu.style.display = "none"
+            }
+            else{
+                card.style.height = "0px";
+                clicked = false;
+                cross.style.display = "none"
+                menu.style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body style="background-color:white;">
+    <header>
+        <div class="card" id="card">
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle" id="toggle">
+                <button onclick="toggle()"><ion-icon name="menu-outline" id="menu"></ion-icon><ion-icon name="close-outline" style="display:none" id="cross"></ion-icon></button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>
+                <img src="logo.png" alt="logo">
+            </h1>
+        </div>
+        <div class="subtitle">
+            <h1>Distributors for Electrical Portable Tools, Spares, Repairs</h1>
+        </div>
+        <div class="video">
+            <br><br>
+            <video controls loop autoplay height="410px" width="700px">
+                <source src="/video.mp4" type="video/mp4">
+            </video>
+        <div class="video_subject">
+            <h1>Our Sales Office</h1>
+        </div>
+    </header>
+</body>
+</html>
